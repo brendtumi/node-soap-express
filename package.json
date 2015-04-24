@@ -1,0 +1,28 @@
+{
+  "name": "soap-express",
+  "version": "1.0.0",
+  "description": "expressjs friendly wrapper around Soap client (https://github.com/vpulim/node-soap).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendtumi/node-soap-express.git"
+  },
+  "keywords": [
+    "soap",
+    "express",
+    "expressjs"
+  ],
+  "author": "Tümay Çeber <tumayceber@gmail.com> (https://about.me/tumayceber)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brendtumi/node-soap-express/issues"
+  },
+  "homepage": "https://github.com/brendtumi/node-soap-express#readme",
+  "dependencies": {
+    "soap": "^0.8.0",
+    "express": "^4.0.0"
+  }
+}
