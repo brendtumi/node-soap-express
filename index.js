@@ -14,18 +14,7 @@ var FakeServer = {
     }
 };
 function expressListen(pathOrOptions, services, xml) {
-    var options = {},
-        path = pathOrOptions;
-
-    if (typeof pathOrOptions === 'object') {
-        options = pathOrOptions;
-        path = options.path;
-        services = options.services;
-        xml = options.xml;
-    }
-
-    var wsdl = new soap.WSDL(xml || services, null, options);
-    return new Server(FakeServer, path, services, wsdl);
+    return soap.listen(FakeServer, pathOrOptions, services, xml);
 }
 soap.expressMiddleware = soapListener;
 soap.expressListen = expressListen;
