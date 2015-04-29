@@ -4,7 +4,7 @@ var router = require('express').Router();
 var soapListener = undefined;
 var FakeServer = {
     listeners: function () {
-        return [];
+        return [function(req, res, next){res.redirect("/404")}];
     },
     removeAllListeners: function () {
         return;
