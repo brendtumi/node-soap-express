@@ -17,7 +17,7 @@ function expressListen(pathOrOptions, services, xml) {
     return soap.listen(FakeServer, pathOrOptions, services, xml);
 }
 
-// TODO: #u$& ???!!!
+// TODO: #u$& ???!!! process.nextTick not working cause of WSDL.onReady on soap
 var soapListenerInterval = setInterval(function () {
     if (typeof soapListener !== "undefined") {
         soap.expressMiddleware = soapListener;
