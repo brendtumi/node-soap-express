@@ -16,7 +16,14 @@ var FakeServer = {
 function expressListen(pathOrOptions, services, xml) {
     return soap.listen(FakeServer, pathOrOptions, services, xml);
 }
-soap.expressMiddleware = soapListener;
+
+// TODO: #u$& ???!!!
+var soapListenerInterval = setInterval(function () {
+    if (typeof soapListener !== "undefined") {
+        soap.expressMiddleware = soapListener;
+        clearInterval(soapListenerInterval);
+    }
+},500);
 soap.expressListen = expressListen;
 
 /**
