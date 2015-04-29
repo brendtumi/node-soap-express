@@ -23,7 +23,7 @@ var soapListenerInterval = setInterval(function () {
         soap.expressMiddleware = soapListener;
         clearInterval(soapListenerInterval);
     }
-},500);
+},150);
 soap.expressListen = expressListen;
 
 /**
