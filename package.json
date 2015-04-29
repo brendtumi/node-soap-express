@@ -1,6 +1,6 @@
 {
   "name": "soap-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "expressjs friendly wrapper around Soap client (https://github.com/vpulim/node-soap).",
   "main": "index.js",
   "scripts": {
